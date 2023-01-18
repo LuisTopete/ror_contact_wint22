@@ -1,16 +1,16 @@
-import ContactShow from './ContactShow';
+import ListShow from './ListShow';
 
-const ContactList = ({ contacts, updateContact, deleteContact }) => (
+const ListList = ({ lists, updateList, deleteList }) => (
   <>
-    { contacts.map( c => 
-      <ContactShow
-        key={c.id}
-        {...c}
-        updateContact={updateContact}
-        deleteContact={deleteContact}
+    { lists.map(l => 
+      <ListShow
+        key={l.id}
+        {...l}
+        updateList={updateList}
+        deleteList={deleteList}
       />
     )}
   </>
-) 
+)
 
-export default ContactList;
+export default ListList;
